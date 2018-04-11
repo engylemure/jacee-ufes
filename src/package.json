@@ -1,0 +1,27 @@
+{
+  "name": "jacee-ufes",
+  "version": "1.0.0",
+  "description": "JACEE REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engylemure/jacee-ufes.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "node"
+  ],
+  "author": "Jordão Rosario <jordao.rosario01@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engylemure/jacee-ufes/issues"
+  },
+  "homepage": "https://github.com/engylemure/jacee-ufes#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
