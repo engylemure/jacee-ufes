@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node:
+    build: .
+    links:
+      - db
+    volumes:
+      - ./src/:/src
+    network_mode: bridge
+    ports:
+      - 80:4000
+    env_file: env
+  db:
+    image: mongo
+    network_mode: bridge
