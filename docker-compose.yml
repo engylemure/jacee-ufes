@@ -11,5 +11,8 @@ services:
       - 80:4000
     env_file: env
   db:
-    image: mongo
+    image: mysql
     network_mode: bridge
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: jacee_ufes
