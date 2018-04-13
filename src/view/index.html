@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JACEE-UFES</title>
+</head>
+<body>
+    <h2>Esta é apenas uma requisição POST normal</h2>
+    <div>Insira o novo usuario a ser incluido no banco de dados</div>
+    <form action="/api/users" method="POST">
+        <input type="text" placeholder="Primeiro Nome" name="firstName">
+        <input type="text" placeholder="Segundo Nome" name="lastName">
+        <input type="text" placeholder="Email" name="email">
+        <input type="text" placeholder="Senha" name="password">
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Esta é apenas uma requisição PUT normal</h2>
+    <div>Insira os dados atualizados do usuario</div>
+    <form action="/api/users/id" method="PUT">
+        <input type="text" placeholder="Primeiro Nome" name="firstName">
+        <input type="text" placeholder="Segundo Nome" name="lastName">
+        <input type="text" placeholder="Email" name="email">
+        <input type="text" placeholder="Senha" name="password">
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <h2>API Test</h2>
+    <hr>
+    <div>
+        <a href="/api/users">API users</a>
+    </div>
+</body>
+</html>
+ 
