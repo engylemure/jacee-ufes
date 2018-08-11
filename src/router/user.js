@@ -15,13 +15,13 @@ const create = async function(req, res) {
 }
 router.post('',create)
 
-const update = async function(req, res) {
-    const {id} = req.params
-    const userParams = req.body
-    const user = await User.findByIdAndUpdate(id,userParams)
-    res.json(user).status(201)
-}
-router.put('/:id', update)
+// const update = async function(req, res) {
+//     const {id} = req.params
+//     const userParams = req.body
+//     const user = await User.findByIdAndUpdate(id,userParams)
+//     res.json(user).status(201)
+// }
+// router.put('/:id', update)
 
 const remove = async function(req, res) {
     const {id} = req.params
