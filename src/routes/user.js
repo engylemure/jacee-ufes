@@ -37,12 +37,12 @@ const remove = function(req, res){
 }
 router.delete('/:id',remove)
 
-const update = function(req, res) {
-  UserModel.findOne({where: {id: req.params.id}}).sync({}).update(req.params.body).then(user => {
-    res.json(user).status(201)
-  })
-}
-router.put('/:id', update)
+// const update = function(req, res) {
+//   UserModel.findOne({where: {id: req.params.id}}).sync({}).update(req.params.body).then(user => {
+//     res.json(user).status(201)
+//   })
+// }
+// router.put('/:id', update)
 
 module.exports = {
   router,
